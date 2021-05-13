@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+
+/* General Page Settings */
+:root{
+  --dark-gray: #2D3748
+}
+* {
+  margin: auto;
+  box-sizing: border-box;
+  font:"Manrope";
+  color:var(--dark-gray);
+}
+
+body {
+  margin: 1rem;
+  
+}
+
+/* ------------------------------------------------------ALerts---------------------------------------------------------  */
+.alert-block{
+  max-width: 800px;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.alert-block h1{
+  font-size: 2rem;
+}
+.alert-container{
+  padding: 1rem;
+  border: 4px solid #f7f7f9;
+  border-radius: 0.3rem;
+  margin: 1rem 0;
+}
+
+.alert{
+  padding: 1rem;
+  margin: 0.5rem;
+  /* background-color:antiquewhite; */
+  border-radius: 0.3rem;
+}
+
+.alert.alert-info{
+  border-color: #c1f3fc;
+  background-color: #dcfaff;
+  color: #0c5460 !important;
+}
+
+.alert.alert-info p{
+  padding: 1rem 0rem;
+  color: #0c5460 !important
+}
+
+.alert.alert-info h3{
+  color: #0c5460 !important;
+}
+
+
+.alert.alert-primary{
+  border-color: #b8daff;
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.alert.alert-success{
+  border-color: #c3e8cb;
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert.alert-danger{
+  border-color: #f5c6cb;
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.alert.alert-warning{
+  border-color: #ffeeba;
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.alert.alert-secondary{
+  border-color: #d6d8db;
+  background-color: #e2e3e5;
+  color: #383d41;
+}
+
+.btn-alert-close{
+  float: right;
+  border:0;
+  background: transparent; 
+  color: #c1f3fc;
+}
+.btn-show-alert{
+  margin: 0.5rem;
+  border:1px solid #383d41;
+  padding: 0.3rem;
+  background: transparent; 
+  color: #383d41;
+}
+
+
+
+
+
+
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
