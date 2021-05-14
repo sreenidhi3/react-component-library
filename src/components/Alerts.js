@@ -49,10 +49,10 @@ export const AlertClose =({alertClosed, setAlertClosed}) =>{
 export const AlertBlock = ()=>{
     const [alertClosed, setAlertClosed] = useState(false);
     return (
-    <section className="alert-block">
+    <section className="block">
         <h1>Alerts</h1>
         <p>Alert dialog boxes are used to give feedback to the user for his actions.</p> 
-        <div className = "alert-container">
+        <div className = "component-container">
             <Alerts/>
             <AlertInfo/>
             {!alertClosed && <AlertClose setAlertClosed={setAlertClosed} alertClosed={alertClosed}/>}

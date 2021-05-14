@@ -3,7 +3,8 @@
 
 /* General Page Settings */
 :root{
-  --dark-gray: #2D3748
+  --dark-gray: #2D3748;
+  --active-green: "#155724";
 }
 * {
   margin: auto;
@@ -14,23 +15,38 @@
 
 body {
   margin: 1rem;
-  
 }
 
-/* ------------------------------------------------------ALerts---------------------------------------------------------  */
-.alert-block{
-  max-width: 800px;
+.block{
+  max-width: 900px;
+  width: 100%; 
   padding: 1rem;
   margin: 0.5rem;
 }
-.alert-block h1{
-  font-size: 2rem;
-}
-.alert-container{
+
+.component-container{
   padding: 1rem;
   border: 4px solid #f7f7f9;
   border-radius: 0.3rem;
   margin: 1rem 0;
+}
+
+.secondary-heading{
+  padding: 1.5rem 0;
+}
+
+.flex{
+  display: flex;
+}
+.flex-row-wrap{
+  flex-flow: row wrap;
+  justify-content:flex-start;
+}
+
+/* ----------------------------------------------------------------Alerts-----------------------------------------------------------------  */
+
+.alert-block h1{
+  font-size: 2rem;
 }
 
 .alert{
@@ -54,7 +70,6 @@ body {
 .alert.alert-info h3{
   color: #0c5460 !important;
 }
-
 
 .alert.alert-primary{
   border-color: #b8daff;
@@ -100,11 +115,273 @@ body {
   color: #383d41;
 }
 
+/* ----------------------------------------------------------------Avatars----------------------------------------------------------------- */
+.avatar{
+  margin: 1rem; 
+}
 
+.sm-avatar{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
 
+.md-avatar{
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
 
+.lg-avatar{
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+}
 
+.xl-avatar{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
 
+.avatar-active{
+  position: relative;
+}
+
+.avatar-badge{
+  display: inline-flex;
+  position: relative;
+  bottom: 15px;
+  left: -30px;
+  /* background: #155724; */
+  min-width:1rem;
+  min-height:1rem;
+  padding:0.1rem;
+  font-size: 70%;
+  /* border:2px solid #155724; */
+  border-radius: 50%;
+}
+
+.avatar-success{
+  background: #28a745;
+  border:2px solid #28a745;
+}
+.avatar-busy{
+  background: #ffc107;
+  border:2px solid #ffc107;
+}
+.avatar-danger{
+  background: #dc3545;
+  border:2px solid #dc3545;
+}
+.avatar-active{
+  background: #007bff;
+  border:2px solid #007bff;
+}
+
+/* ----------------------------------------------------------------Badges------------------------------------------------------------------- */
+
+.badge{
+  text-align:center;
+  border-radius: 1rem;
+  padding: 0.1rem 0.3rem;
+  margin: 1rem 0.7rem 1rem 0;
+}
+
+.badge.badge-primary{
+  border: 1px solid #b8daff;
+  background-color: #cce5ff;
+  color: #004085;
+}
+.badge.badge-secondary{
+  border: 1px solid #d6d8db;
+  background-color: #e2e3e5;
+  color: #383d41;
+}
+.badge.badge-success{
+  border: 1px solid #c3e8cb;
+  background-color: #d4edda;
+  color: #155724;
+}
+.badge.badge-warning{
+  border: 1px solid #ffeeba;
+  background-color: #fff3cd;
+  color: #856404;
+}
+.badge.badge-error{
+  border: 1px solid #f5c6cb;
+  background-color: #f8d7da;
+  color: #721c24;
+}
+.badge.badge-info{
+  border: 1px solid #c1f3fc;
+  background-color: #dcfaff;
+  color: #0c5460 !important;
+}
+
+.badge.badge-primary-outline{
+  border: 2px solid #b8daff;
+  color: #004085;
+}
+.badge.badge-secondary-outline{
+  border: 2px solid #d6d8db;
+  color: #383d41;
+}
+.badge.badge-success-outline{
+  border: 2px solid #c3e8cb;
+  color: #155724;
+}
+.badge.badge-warning-outline{
+  border: 2px solid #ffeeba;
+  color: #856404;
+}
+.badge.badge-error-outline{
+  border: 2px solid #f5c6cb;
+  color: #721c24;
+}
+.badge.badge-info-outline{
+  border: 2px solid #c1f3fc;
+  color: #0c5460 !important;
+}
+
+.badge.badge-counter{
+  text-align: center;
+  padding: 0.5rem;
+  border-radius:0.5rem;
+  background-color: #007bff;
+  color: white !important;
+}
+.badge.badge-counter .badge-count{
+  display: inline-flex;
+  padding: 0 0.5rem 0 0.4rem;
+  text-align: center;
+  min-width:1rem;
+  min-height:1rem;
+  margin: 0rem 0 0 0.5rem;
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+/* -----------------------------------------------------------------Buttons---------------------------------------------------------------- */
+
+.btn{
+  padding: 0.7rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn.btn-primary-outline{
+  border: 2px solid #007bff;
+}
+.btn.btn-secondary-outline{
+  border: 2px solid #383d41;
+}
+.btn.btn-success-outline{
+  border: 2px solid #28a745;
+}
+.btn.btn-warning-outline{
+  border: 2px solid #ffc107;
+}
+.btn.btn-error-outline{
+  border: 2px solid #dc3545;
+}
+.btn.btn-info-outline{
+  border: 2px solid #218a9c;
+}
+
+.btn.btn-primary-outline:hover{
+  background: #007bff;
+  color: #ffffff;
+}
+.btn.btn-secondary-outline:hover{
+  background: #383d41;
+  color: #ffffff;
+}
+.btn.btn-success-outline:hover{
+  background: #28a745;
+  color: #ffffff;
+}
+.btn.btn-warning-outline:hover{
+  background: #ffc107;
+  color: #ffffff;
+}
+.btn.btn-error-outline:hover{
+  background: #dc3545;
+  color: #ffffff;
+}
+.btn.btn-info-outline:hover{
+  background: #218a9c;
+  color: #ffffff;
+}
+
+.btn.btn-primary{
+  color: #ffffff;
+  background-color:#007bff;
+  border: 2px solid #007bff;
+}
+.btn.btn-primary:hover{
+  background-color:#0066d3;
+}
+
+.btn.btn-secondary{
+  color: #ffffff;
+  background-color: #383d41;
+  border: 2px solid #383d41;
+}
+.btn.btn-secondary:hover{
+  background-color: #2e3235;
+}
+
+.btn.btn-success{
+  color: #ffffff;
+  background-color:#28a745;
+  border: 2px solid #28a745;
+}
+.btn.btn-success:hover{
+  background-color:#24913d;
+}
+
+.btn.btn-warning{
+  color: #ffffff;
+  background-color:#ffc107;
+  border: 2px solid #ffc107;
+}
+.btn.btn-warning:hover{
+  background-color:#cc9a05;
+}
+
+.btn.btn-error{
+  color: #ffffff;
+  background-color:#dc3545;
+  border: 2px solid #dc3545;
+}
+.btn.btn-error:hover{
+  background-color:#bd1b2b;
+}
+
+.btn.btn-info{
+  color: #ffffff;
+  background-color:#218a9c;
+  border: 2px solid #218a9c;
+}
+.btn.btn-info:hover{
+  background-color:#176370;
+}
+
+.btn-disabled{
+  cursor: not-allowed;
+}
+.btn-floating-action{
+  border-radius: 100%;
+  box-shadow: 0px 1px 5px #383d41;
+}
+.btn-floating-action:hover{
+  box-shadow: 1px 2px 5px #383d41;
+}
 
 /* .App {
   text-align: center;
