@@ -1,4 +1,4 @@
-import React, {useState}from 'react';
+import React from 'react';
 import Dog from "../images/pictures/dog.png";
 
 const HorizontalCard =()=>{
@@ -12,7 +12,7 @@ const HorizontalCard =()=>{
                         </div>
                         <div className="card-content-h"><h5 className="card-title">Card Title</h5>
                             <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <br/><div className="card-btn"><button class="btn btn-primary btn-full">Add</button></div>
+                            <br/><div className="card-btn"><button className="btn btn-primary btn-full">Add</button></div>
                         </div>
                     </div>
                 </div> 
@@ -47,7 +47,7 @@ const VerticalCard=()=>{
                         <div className="card-image"><img src={Dog} alt="dog-picture" ></img></div>
                         <h5 className="card-title">Card Title</h5>
                         <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <br/><div className="card-btn"><button class="btn btn-primary btn-full">Add</button></div>
+                        <br/><div className="card-btn"><button className="btn btn-primary btn-full">Add</button></div>
                     </div>
                 </div>
         </section>

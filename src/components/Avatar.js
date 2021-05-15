@@ -1,4 +1,4 @@
-import React, {useState}from 'react';
+import React from 'react';
 import avatarFemale from '../images/avatar/avatar-female.png';
 import avatarMale from '../images/avatar/avatar-male.png';
 

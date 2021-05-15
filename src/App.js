@@ -4,6 +4,7 @@ import {AvatarBlock} from './components/Avatar';
 import {BadgesBlock} from './components/Badges';
 import {ButtonBlock} from './components/Buttons';
 import {CardBlock} from './components/Cards';
+import {AccordionBlock} from './components/Accordion';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <BadgesBlock/>
       <ButtonBlock/>
       <CardBlock/>
+      <AccordionBlock/>
     </div>
   );
 }

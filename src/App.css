@@ -388,7 +388,7 @@ body {
 }
 
 
-/* ------------------------------------------Cards--------------------------- */
+/* --------------------------------------------------------------------Cards--------------------------------------------------------------------- */
 .card{
   max-width: 350px;
   border: 1px solid #aaaaaa;
@@ -462,6 +462,59 @@ body {
 }
 .card-content-h .card-title{
   font-size: 1.5rem;
+}
+
+
+/* -------------------------------------------------------------------Accordians----------------------------------------------------------------- */
+.accordion-container{
+  margin:0;
+  width: 100%;
+  padding: 0rem;
+  max-width: 700px;
+  background: #f7f7f7;
+  border: 1px solid#e6e6e6;
+  /* box-shadow: 0px 0px 34px -8px rgba(0, 0, 0, 0.55); */
+}
+
+.accordion-element{
+  background-color: #f7f7f7;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid #a7a7a7;
+  text-align: left;
+  outline: none; 
+  transition: all 0.5s ease-out;
+}
+
+.active-accordion-element{
+  background-color: #f7f7f7;
+}
+
+.accordion-element:hover{
+  background-color: #007bff36;
+}
+.accordion-element::after{
+  content: "\002B";
+  font-weight: bold;
+  float: right;
+  margin-left: 0.5rem;
+}
+
+.active-accordion-element{
+  content: "\2212";
+}
+
+.accordion-content{
+  padding: 0 1rem;
+  border: 1px solid #a7a7a7;
+  border-top: 0 ;
+  border-bottom: 0;
+  background-color: #f7f7f7;
+  color: #aaa;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
 }
 
 
