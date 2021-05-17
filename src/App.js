@@ -5,6 +5,7 @@ import {BadgesBlock} from './components/Badges';
 import {ButtonBlock} from './components/Buttons';
 import {CardBlock} from './components/Cards';
 import {AccordionBlock} from './components/Accordion';
+import {NavBar} from './components/NavBar';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ButtonBlock/>
       <CardBlock/>
       <AccordionBlock/>
+      <NavBar/>
     </div>
   );
 }
