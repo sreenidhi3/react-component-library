@@ -47,6 +47,58 @@ body {
   justify-content:flex-start;
 }
 
+.sidebar{
+  position: fixed; 
+  padding-left: 0;
+  padding-right: 1rem;
+  margin: 0;
+  text-align: left;
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-right: 1px solid #dcdddd;
+}
+.sidebar-item{
+  text-align: left;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+}
+.sidebar li{
+  padding: 1rem;
+  margin: 0;
+  width: inherit;
+}
+
+.sidebar-item a{
+  text-decoration: none;
+}
+
+.sidebar-item:hover{
+  background: #f3f4f6;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+}
+
+ul{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.main{
+  margin-left: 200px;
+  width: 800px;
+  min-width: 100%;
+  max-width: 1000px;
+}
+
 /* ----------------------------------------------------------------Alerts-----------------------------------------------------------------  */
 
 .alert-block h1{
