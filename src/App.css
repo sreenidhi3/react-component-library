@@ -587,6 +587,17 @@ body {
 } 
 
 
+/* ---------------------------------------------------------Callouts------------------------------------------------------------- */
+
+.callout{
+  align-items: flex-start;
+  padding: 0 1rem 0.7rem 1rem ;
+  border: 1px solid  rgb(153, 153, 153, 0.2);
+  border-radius: 3px;
+  border-left: 4px solid cornflowerblue !important;
+}
+
+
 /* .App {
   text-align: center;
 }
