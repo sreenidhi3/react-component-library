@@ -7,6 +7,9 @@ import {CardBlock} from './components/Cards';
 import {AccordionBlock} from './components/Accordion';
 import {NavBar} from './components/NavBar';
 import {CalloutBlock} from './components/Callouts';
+import {InputBlock} from './components/Inputs';
+import {ListBlock} from './components/Lists';
+
 function App() {
   return (
     <div>
@@ -18,6 +21,8 @@ function App() {
       <AccordionBlock/>
       <NavBar/>
       <CalloutBlock/>
+      <InputBlock/>
+      <ListBlock/>
     </div>
   );
 }

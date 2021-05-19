@@ -517,7 +517,7 @@ body {
   transition: max-height 0.2s ease-out;
 }
 
-/* ----------------------------------------------------NavBar------------------------------------ */
+/* -----------------------------------------------------------------------NavBar----------------------------------------------------------------- */
 
 .nav{
   height: 80px;
@@ -587,17 +587,83 @@ body {
 } 
 
 
-/* ---------------------------------------------------------Callouts------------------------------------------------------------- */
+/* ----------------------------------------------------------------------Callouts--------------------------------------------------------------- */
 
 .callout{
   align-items: flex-start;
   padding: 0 1rem 0.7rem 1rem ;
-  border: 1px solid  rgb(153, 153, 153, 0.2);
+  border: 1px solid  #dcdcdd;
   border-radius: 3px;
   border-left: 4px solid cornflowerblue !important;
 }
 
+/* ----------------------------------------------------------------------Lists------------------------------------------------------------------- */
 
+.list{
+  margin: 0;
+  list-style-type: none;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  border: 1px solid #dcdcdd;
+  border-radius: 0.5rem;
+}
+
+.list-item{
+  margin: 0 0.2rem;
+  padding: 0.6rem;
+  border-bottom: 1px solid #dcdcdd;
+}
+
+.list-item:last-child{
+  padding: 0.6rem;
+  border-bottom: 0;
+}
+
+/* -------------------------------------------------------------------Inputs--------------------------------------------------------------------- */
+
+.input-group{
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.input{
+  margin: 0;
+  border: 0;
+  display: block;
+  font-size: 1rem;
+  padding: 0.433rem .75rem;
+  line-height: 1.5;
+  border: 1px solid #dcdcdd;
+  border-radius: 0.25rem;
+}
+
+.input-prepend{
+  border-radius: 0 .25rem 0.25rem 0;
+}
+
+.prepend{
+  margin: 0;
+  padding:0.5rem;
+  background: #f8f9fa;
+  border: 1px solid #dcdcdd;
+  border-radius: .25rem 0 0 0.25rem;
+}
+
+
+.input-append{
+  border-radius: .25rem 0 0 0.25rem ;
+}
+
+.append{
+  margin: 0;
+  padding:0.5rem;
+  background: #f8f9fa;
+  border: 1px solid #dcdcdd;
+  border-radius: 0 .25rem 0.25rem 0 ;
+}
 /* .App {
   text-align: center;
 }
