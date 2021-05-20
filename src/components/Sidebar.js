@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const Sidebar=()=>{
     return(
         <ul className="sidebar">
-            <li className="nav-brand"><Link to="/"><img className="sidebar-logo"src="lush-ui.png"></img><h3>Lush UI</h3></Link></li>
+            <li className="nav-brand"><Link to="/"><img className="sidebar-logo"src="lush-ui.png" alt=""></img><h3>Lush UI</h3></Link></li>
             <li className ="sidebar-item"><Link  to="/">Home</Link></li>
             <li className ="sidebar-item"><Link to="/accordion">Accordion</Link></li>
             <li className ="sidebar-item"><Link to="/alert">Alert</Link></li>
