@@ -13,6 +13,58 @@ const NavLink = ({key, navTitle})=>{
 
 export const NavBar = ()=>{
     const NavTitles = ["Home", "Messages", "Account", "Settings"];
+    const copyCode=()=>{
+        const codeElem = document.querySelector("code");
+        codeElem.innerText = `SIMPLE NAVBAR
+        
+        <nav class="nav nav-menu">
+        <ul class="horizontal-list">
+        <li>
+        <a class="nav-tab"><span class="icon"></span><span class="tab">Home</span></a>
+        <div class="active-tab"></div>
+        </li>
+        <li><a class="nav-tab"><span class="icon"></span><span class="tab">Messages</span></a>
+        <div class="active-tab"></div>
+        </li>
+        <li>
+        <a class="nav-tab"><span class="icon"></span><span class="tab">Account</span></a>
+        <div class="active-tab"></div>
+        </li>
+        <li>
+        <a class="nav-tab"><span class="icon"></span><span class="tab">Settings</span></a>
+        <div class="active-tab"></div>
+        </li>
+        </ul>
+        </nav>
+
+        NAVBAR WITH BRAND
+
+        <nav class="nav nav-menu flex ">
+        <div class="nav-brand">
+        <h3><a class="nav-tab">Brand Name</a></h3>
+        </div>
+        <ul class="horizontal-list">
+        <li>
+        <a class="nav-tab"><span class="icon"></span><span class="tab">Home</span></a>
+        <div class="active-tab"></div>
+        </li>
+        <li>
+        <a class="nav-tab"><span class="icon"></span><span class="tab">Messages</span></a>
+        <div class="active-tab"></div>
+        </li>
+        <li>
+        <a class="nav-tab"><span class="icon"></span><span class="tab">Account</span></a>
+        <div class="active-tab"></div>
+        </li>
+        <li>
+        <a class="nav-tab"><span class="icon"></span><span class="tab">Settings</span></a>
+        <div class="active-tab"></div>
+        </li>
+        </ul>
+        </nav>
+    `;
+    document.querySelector(".code").style.background= "rgb(20, 20, 20)";
+    }
     return(
         <section className="block">
             <h1>Navigation Bar</h1>
@@ -27,16 +79,20 @@ export const NavBar = ()=>{
                     </ul>
                 </nav>
                 <div>
-                <h4 className="secondary-heading">Navbar with Brand</h4>
-                <nav class="nav nav-menu flex ">
+                    <h4 className="secondary-heading">Navbar with Brand</h4>
+                    <nav class="nav nav-menu flex ">
                     <div className="nav-brand"><h3><a class="nav-tab">Brand Name</a></h3></div>
-                    <ul class="horizontal-list">
+                        <ul class="horizontal-list">
                         {
                             NavTitles.map((navTitle)=><NavLink key ={navTitle} navTitle={navTitle}/>)
                         }
-                    </ul>
-                </nav>
-            </div>
+                        </ul>
+                    </nav>
+                </div>
+                <div className="code-block">
+                    <span className="badge badge-secondary-outline" onClick={copyCode}>Show Code</span>
+                </div>
+                <div className='code'><code>  </code></div>
             </div>
             
     </section>

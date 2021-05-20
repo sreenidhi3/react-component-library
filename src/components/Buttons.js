@@ -3,12 +3,16 @@ import React, {useState}from 'react';
 export const ButtonBlock = ()=>{
     const copyCode = ()=>{
         const codeElem = document.querySelector("code");
-        const text= `<button className="btn btn-primary-outline">Primary</button>
+        const text= `OUTLINE BUTTONS
+
+        <button className="btn btn-primary-outline">Primary</button>
         <button className="btn btn-secondary-outline">Secondary</button>
         <button className="btn btn-success-outline">Success</button>
         <button className="btn btn-warning-outline">Warning</button>
         <button className="btn btn-error-outline">Error</button>
         <button className="btn btn-info-outline">Info</button>
+
+        SOLID BUTTONS
 
         <button className="btn btn-primary">Primary</button>
         <button className="btn btn-secondary">Secondary</button>
@@ -17,6 +21,8 @@ export const ButtonBlock = ()=>{
         <button className="btn btn-error">Error</button>
         <button className="btn btn-info">Info</button>
 
+        BUTTONS VARIATION
+        
         <button className="btn btn-info btn-disabled">Info</button>
         <button className="btn btn-primary btn-floating-action">+</button>
         `;

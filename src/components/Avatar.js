@@ -10,7 +10,8 @@ export const AvatarBlock = ()=>{
                 <img className="avatar lg-avatar" src={avatarFemale} alt="avatar"/>
                 <img className="avatar xl-avatar" src={avatarMale} alt="avatar"/>
         
-
+                AVATARS WITH BADGES
+                
                 <span><img className="avatar md-avatar" src={avatarFemale} alt="avatar"/><span className="avatar-badge avatar-active"></span></span>
                 <span><img className="avatar md-avatar" src={avatarFemale} alt="avatar"/><span className="avatar-badge avatar-success"></span></span>
                 <div><img className="avatar md-avatar" src={avatarFemale} alt="avatar"/><span className="avatar-badge avatar-busy"></span></div>
