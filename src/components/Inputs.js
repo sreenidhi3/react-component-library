@@ -26,7 +26,7 @@ export const InputBlock =()=>{
             <p>Input is used to take input from user in a form</p> 
             <div className="component-container">
                 <div>
-                    <label for="input">Name</label>
+                    <label htmlFor="input">Name</label>
                     <input className="input" type="text" id="input" placeholder="Name"></input>
                 </div>
                 <br/>

@@ -8,7 +8,7 @@ const HorizontalCard =()=>{
                 <div>
                     <div className="card-horizontal">
                         <div className="card-image-h">
-                            <img src={Dog} alt="dog-picture" ></img>
+                            <img src={Dog} alt=""></img>
                         </div>
                         <div className="card-content-h"><h5 className="card-title">Card Title</h5>
                             <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -30,8 +30,8 @@ const TextCard=()=>{
                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
                 <div className="card-link-block">
-                    <a href="#">Link-1</a>
-                    <a href="#">Link-2</a>
+                    <a href="/card">Link-1</a>
+                    <a href="/card">Link-2</a>
                 </div>
             </div>
         </section>
@@ -44,7 +44,7 @@ const VerticalCard=()=>{
             <h4 className="secondary-heading">Vertical Image Cards </h4>
                 <div>
                     <div className="card card-regular">
-                        <div className="card-image"><img src={Dog} alt="dog-picture" ></img></div>
+                        <div className="card-image"><img src={Dog} alt="" ></img></div>
                         <h5 className="card-title">Card Title</h5>
                         <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <br/><div className="card-btn"><button className="btn btn-primary btn-full">Add</button></div>

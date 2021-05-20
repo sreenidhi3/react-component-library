@@ -1,64 +1,106 @@
 import React from 'react';
 
-const NavLink = ({key, navTitle})=>{
-    return(
-        <li key={key}>
-            <a class="nav-tab">
-                <span class="icon"></span>
-                <span class="tab">{navTitle}</span>
-            </a>
-            <div class="active-tab"></div>
-        </li>
-    )}
-
 export const NavBar = ()=>{
-    const NavTitles = ["Home", "Messages", "Account", "Settings"];
+
+    const NavWithBrand = ()=>{
+        return(
+            <nav className="nav nav-menu flex ">
+                    <div className="nav-brand">
+                    <h3><a className="nav-tab">Brand Name</a></h3>
+                    </div>
+                        <ul className="horizontal-list">
+                            <li>
+                                <a className="nav-tab"><span className="icon"></span><span className="tab">Home</span></a>
+                                <div className="active-tab"></div>
+                            </li>
+                            <li>
+                                <a className="nav-tab"><span className="icon"></span><span className="tab">Messages</span></a>
+                                <div className="active-tab"></div>
+                            </li>
+                            <li>
+                                <a className="nav-tab"><span className="icon"></span><span className="tab">Account</span></a>
+                                <div className="active-tab"></div>
+                            </li>
+                            <li>
+                                <a className="nav-tab"><span className="icon"></span><span className="tab">Settings</span></a>
+                                <div className="active-tab"></div>
+                            </li>
+                        </ul>
+                    </nav>
+            )
+    }
+
+    const SimpleNav = ()=>{
+        return(
+            <nav className="nav nav-menu">
+                    <ul className="horizontal-list">
+                        <li>
+                            <a className="nav-tab"><span className="icon"></span><span className="tab">Home</span></a>
+                            <div className="active-tab"></div>
+                        </li>
+                        <li>
+                            <a className="nav-tab"><span className="icon"></span><span className="tab">Messages</span></a>
+                            <div className="active-tab"></div>
+                        </li>
+                        <li>
+                            <a className="nav-tab"><span className="icon"></span><span className="tab">Account</span></a>
+                            <div className="active-tab"></div>
+                        </li>
+                        <li>
+                            <a className="nav-tab"><span className="icon"></span><span className="tab">Settings</span></a>
+                            <div className="active-tab"></div>
+                        </li>
+                    </ul>
+                </nav>
+            )
+    }
+    
     const copyCode=()=>{
         const codeElem = document.querySelector("code");
         codeElem.innerText = `SIMPLE NAVBAR
         
-        <nav class="nav nav-menu">
-        <ul class="horizontal-list">
+        <nav className="nav nav-menu">
+        <ul className="horizontal-list">
         <li>
-        <a class="nav-tab"><span class="icon"></span><span class="tab">Home</span></a>
-        <div class="active-tab"></div>
+        <a className="nav-tab"><span className="icon"></span><span className="tab">Home</span></a>
+        <div className="active-tab"></div>
         </li>
-        <li><a class="nav-tab"><span class="icon"></span><span class="tab">Messages</span></a>
-        <div class="active-tab"></div>
-        </li>
-        <li>
-        <a class="nav-tab"><span class="icon"></span><span class="tab">Account</span></a>
-        <div class="active-tab"></div>
+        <li><a className="nav-tab"><span className="icon"></span><span className="tab">Messages</span></a>
+        <div className="active-tab"></div>
         </li>
         <li>
-        <a class="nav-tab"><span class="icon"></span><span class="tab">Settings</span></a>
-        <div class="active-tab"></div>
+        <a className="nav-tab"><span className="icon"></span><span className="tab">Account</span></a>
+        <div className="active-tab"></div>
+        </li>
+        <li>
+        <a className="nav-tab"><span className="icon"></span><span className="tab">Settings</span></a>
+        <div className="active-tab"></div>
         </li>
         </ul>
         </nav>
 
         NAVBAR WITH BRAND
 
-        <nav class="nav nav-menu flex ">
-        <div class="nav-brand">
-        <h3><a class="nav-tab">Brand Name</a></h3>
+        <nav className="nav nav-menu flex ">
+        <div className="nav-brand">
+        <h3><a className="nav-tab">Brand Name</a></h3>
         </div>
-        <ul class="horizontal-list">
+        <ul className="horizontal-list">
         <li>
-        <a class="nav-tab"><span class="icon"></span><span class="tab">Home</span></a>
-        <div class="active-tab"></div>
+        <a className="nav-tab"><span className="icon"></span><span className="tab">Home</span></a>
+        <div className="active-tab"></div>
         </li>
         <li>
-        <a class="nav-tab"><span class="icon"></span><span class="tab">Messages</span></a>
-        <div class="active-tab"></div>
+        <a className="nav-tab"><span className="icon"></span><span className="tab">Messages</span></a>
+        <div className="active-tab"></div>
         </li>
         <li>
-        <a class="nav-tab"><span class="icon"></span><span class="tab">Account</span></a>
-        <div class="active-tab"></div>
+        <a className="nav-tab"><span className="icon"></span><span className="tab">Account</span></a>
+        <div className="active-tab"></div>
         </li>
         <li>
-        <a class="nav-tab"><span class="icon"></span><span class="tab">Settings</span></a>
-        <div class="active-tab"></div>
+        <a className="nav-tab"><span className="icon"></span><span className="tab">Settings</span></a>
+        <div className="active-tab"></div>
         </li>
         </ul>
         </nav>
@@ -71,24 +113,11 @@ export const NavBar = ()=>{
             <p>Navigation Bar is used to navigate across the application/website. It is usually placed at the top of the page.</p> 
             <div className="component-container">
                 <h4 className="secondary-heading">Simple Navbar</h4>
-                <nav class="nav nav-menu">
-                    <ul class="horizontal-list">
-                        {
-                            NavTitles.map((navTitle)=><NavLink key ={navTitle} navTitle={navTitle}/>)
-                        }
-                    </ul>
-                </nav>
-                <div>
-                    <h4 className="secondary-heading">Navbar with Brand</h4>
-                    <nav class="nav nav-menu flex ">
-                    <div className="nav-brand"><h3><a class="nav-tab">Brand Name</a></h3></div>
-                        <ul class="horizontal-list">
-                        {
-                            NavTitles.map((navTitle)=><NavLink key ={navTitle} navTitle={navTitle}/>)
-                        }
-                        </ul>
-                    </nav>
-                </div>
+                <SimpleNav/>
+                
+                <h4 className="secondary-heading">Navbar with Brand</h4>
+                <NavWithBrand/>
+                    
                 <div className="code-block">
                     <span className="badge badge-secondary-outline" onClick={copyCode}>Show Code</span>
                 </div>

@@ -3,8 +3,6 @@ import React from "react";
 
 const AccordianElement =({title})=>{
     const toggleAccordian=(e)=>{
-        // console.log('cliakced');
-        // console.log(e);
         e.target.classList.toggle("active-accordion-element")
         let item = e.target.nextElementSibling;
         if (item.style.maxHeight){
@@ -30,7 +28,6 @@ export const AccordionBlock = ()=>{
     const titles = ["Collapsible Item 1", "Collapsible Item 2", "Collapsible Item 3"];
     const copyCode=()=>{
             const codeElem = document.querySelector("code");
-            const code = document.querySelector("article").outerHTML;;
             codeElem.innerText = `<article class="accordion-container">
             <div>
                 <button class="accordion-element">Collapsible Item 1</button>

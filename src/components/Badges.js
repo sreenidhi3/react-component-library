@@ -1,8 +1,8 @@
-import React, {useState}from 'react';
+import React from 'react';
 import avatarFemale from '../images/avatar/avatar-female.png';
 
 export const BadgesBlock = ()=>{
-    const [count, setCount] = useState(5);
+    const count = 5;
     const copyCode=()=>{
         const codeElem = document.querySelector("code");
         codeElem.innerText = `PILL BADGES
