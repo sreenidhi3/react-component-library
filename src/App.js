@@ -54,6 +54,9 @@ function App() {
         <Route exact path="/navbar">
           <NavBar/>
         </Route>
+        <Route exact path="/app.css">
+        {App.css}
+        </Route>
       </Switch>
       </div>
     </Router>

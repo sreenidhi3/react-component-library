@@ -24,6 +24,10 @@ body {
   margin: 0.5rem;
 }
 
+.home{
+  border-bottom: 1px solid #aaaaaa;
+}
+
 .component-container{
   padding: 1rem;
   border: 4px solid #f7f7f9;
@@ -78,6 +82,23 @@ body {
 
 .sidebar-item:hover{
   background: #f3f4f6;
+}
+
+.sidebar-logo{
+  width: 50px;
+  margin:0;
+}
+
+.sidebar .nav-brand{
+  display: flex;
+  padding-left: 0rem;
+  /* padding: 0.2rem; */
+}
+
+.sidebar .nav-brand a{
+  display: flex;
+  text-decoration: none;
+  /* padding: 0.2rem; */
 }
 
 .app-container {
