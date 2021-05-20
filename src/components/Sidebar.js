@@ -17,7 +17,7 @@ export const Sidebar=()=>{
             <li className ="sidebar-item"><Link to="/input">Inputs</Link></li>
             <li className ="sidebar-item"><Link to="/list">Lists</Link></li>
             <li className ="sidebar-item"><Link to="/navbar">Navbar</Link></li>
-            <li><p>© My UI</p></li>
+            <li><p>© Lush UI by Sreenidhi Bendre</p></li>
         </ul>
     )
 }
