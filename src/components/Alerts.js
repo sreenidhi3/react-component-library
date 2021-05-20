@@ -2,23 +2,15 @@
 
 import React, {useState}from 'react';
 
-const Alert = ({alert}) =>{
-    let alertType = "alert " + "alert-"+alert;
-    console.log(alertType);
-    return(
-        <div className ={alertType}>
-            {/* {console.log(alert)} */}
-            This is a {alert} alert.
-        </div>
-    );
-};
 
 export const Alerts = () =>{
-    const alertTypes = ["primary", "warning", "success", "danger","secondary"];
-    return(
-        alertTypes.map((alert)=>{
-            return <Alert alert={alert}/>
-        })
+    return(<section>
+        <div className="alert alert-primary">This is a primary alert.</div>
+        <div className="alert alert-warning">This is a warning alert.</div>
+        <div className="alert alert-success">This is a success alert.</div>
+        <div className="alert alert-danger">This is a danger alert.</div>
+        <div className="alert alert-secondary">This is a secondary alert.</div>
+        </section>
     );
 };
 
@@ -56,11 +48,11 @@ export const AlertBlock = ()=>{
 
     const copyCode = ()=>{
         const codeElem = document.querySelector("code");
-        const alert1= `<div class="alert alert-primary">This is a primary alert.</div>
-        <div class="alert alert-warning">This is a warning alert.</div>
-        <div class="alert alert-success">This is a success alert.</div>
-        <div class="alert alert-danger">This is a danger alert.</div>
-        <div class="alert alert-secondary">This is a secondary alert.</div>
+        const alert1= `<div className="alert alert-primary">This is a primary alert.</div>
+        <div className="alert alert-warning">This is a warning alert.</div>
+        <div className="alert alert-success">This is a success alert.</div>
+        <div className="alert alert-danger">This is a danger alert.</div>
+        <div className="alert alert-secondary">This is a secondary alert.</div>
         
             
 

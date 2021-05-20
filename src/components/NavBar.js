@@ -6,23 +6,23 @@ export const NavBar = ()=>{
         return(
             <nav className="nav nav-menu flex ">
                     <div className="nav-brand">
-                    <h3><a className="nav-tab">Brand Name</a></h3>
+                    <h3><a href="/navbar" className="nav-tab">Brand Name</a></h3>
                     </div>
                         <ul className="horizontal-list">
                             <li>
-                                <a className="nav-tab"><span className="icon"></span><span className="tab">Home</span></a>
+                                <a href="/navbar" className="nav-tab"><span className="icon"></span><span className="tab">Home</span></a>
                                 <div className="active-tab"></div>
                             </li>
                             <li>
-                                <a className="nav-tab"><span className="icon"></span><span className="tab">Messages</span></a>
+                                <a href="/navbar" className="nav-tab"><span className="icon"></span><span className="tab">Messages</span></a>
                                 <div className="active-tab"></div>
                             </li>
                             <li>
-                                <a className="nav-tab"><span className="icon"></span><span className="tab">Account</span></a>
+                                <a href="/navbar" className="nav-tab"><span className="icon"></span><span className="tab">Account</span></a>
                                 <div className="active-tab"></div>
                             </li>
                             <li>
-                                <a className="nav-tab"><span className="icon"></span><span className="tab">Settings</span></a>
+                                <a href="/navbar" className="nav-tab"><span className="icon"></span><span className="tab">Settings</span></a>
                                 <div className="active-tab"></div>
                             </li>
                         </ul>
@@ -35,19 +35,19 @@ export const NavBar = ()=>{
             <nav className="nav nav-menu">
                     <ul className="horizontal-list">
                         <li>
-                            <a className="nav-tab"><span className="icon"></span><span className="tab">Home</span></a>
+                            <a href="/navbar" className="nav-tab"><span className="icon"></span><span className="tab">Home</span></a>
                             <div className="active-tab"></div>
                         </li>
                         <li>
-                            <a className="nav-tab"><span className="icon"></span><span className="tab">Messages</span></a>
+                            <a href="/navbar" className="nav-tab"><span className="icon"></span><span className="tab">Messages</span></a>
                             <div className="active-tab"></div>
                         </li>
                         <li>
-                            <a className="nav-tab"><span className="icon"></span><span className="tab">Account</span></a>
+                            <a href="/navbar" className="nav-tab"><span className="icon"></span><span className="tab">Account</span></a>
                             <div className="active-tab"></div>
                         </li>
                         <li>
-                            <a className="nav-tab"><span className="icon"></span><span className="tab">Settings</span></a>
+                            <a href="/navbar" className="nav-tab"><span className="icon"></span><span className="tab">Settings</span></a>
                             <div className="active-tab"></div>
                         </li>
                     </ul>
@@ -62,18 +62,18 @@ export const NavBar = ()=>{
         <nav className="nav nav-menu">
         <ul className="horizontal-list">
         <li>
-        <a className="nav-tab"><span className="icon"></span><span className="tab">Home</span></a>
+        <a href="/navbar" className="nav-tab"><span className="icon"></span><span className="tab">Home</span></a>
         <div className="active-tab"></div>
         </li>
-        <li><a className="nav-tab"><span className="icon"></span><span className="tab">Messages</span></a>
-        <div className="active-tab"></div>
-        </li>
-        <li>
-        <a className="nav-tab"><span className="icon"></span><span className="tab">Account</span></a>
+        <li><a href="/navbar" className="nav-tab"><span className="icon"></span><span className="tab">Messages</span></a>
         <div className="active-tab"></div>
         </li>
         <li>
-        <a className="nav-tab"><span className="icon"></span><span className="tab">Settings</span></a>
+        <a href="/navbar" className="nav-tab"><span className="icon"></span><span className="tab">Account</span></a>
+        <div className="active-tab"></div>
+        </li>
+        <li>
+        <a href="/navbar" className="nav-tab"><span className="icon"></span><span className="tab">Settings</span></a>
         <div className="active-tab"></div>
         </li>
         </ul>
@@ -83,23 +83,23 @@ export const NavBar = ()=>{
 
         <nav className="nav nav-menu flex ">
         <div className="nav-brand">
-        <h3><a className="nav-tab">Brand Name</a></h3>
+        <h3><a href="/navbar" className="nav-tab">Brand Name</a></h3>
         </div>
         <ul className="horizontal-list">
         <li>
-        <a className="nav-tab"><span className="icon"></span><span className="tab">Home</span></a>
+        <a href="/navbar" className="nav-tab"><span className="icon"></span><span className="tab">Home</span></a>
         <div className="active-tab"></div>
         </li>
         <li>
-        <a className="nav-tab"><span className="icon"></span><span className="tab">Messages</span></a>
+        <a href="/navbar" className="nav-tab"><span className="icon"></span><span className="tab">Messages</span></a>
         <div className="active-tab"></div>
         </li>
         <li>
-        <a className="nav-tab"><span className="icon"></span><span className="tab">Account</span></a>
+        <a href="/navbar" className="nav-tab"><span className="icon"></span><span className="tab">Account</span></a>
         <div className="active-tab"></div>
         </li>
         <li>
-        <a className="nav-tab"><span className="icon"></span><span className="tab">Settings</span></a>
+        <a href="/navbar" className="nav-tab"><span className="icon"></span><span className="tab">Settings</span></a>
         <div className="active-tab"></div>
         </li>
         </ul>
@@ -117,7 +117,7 @@ export const NavBar = ()=>{
                 
                 <h4 className="secondary-heading">Navbar with Brand</h4>
                 <NavWithBrand/>
-                    
+
                 <div className="code-block">
                     <span className="badge badge-secondary-outline" onClick={copyCode}>Show Code</span>
                 </div>

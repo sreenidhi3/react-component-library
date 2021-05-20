@@ -14,7 +14,6 @@ const AccordianElement =({title})=>{
     return (
         <div>
             <button onClick ={(e)=>toggleAccordian(e)} className="accordion-element" >{title}</button>
-            {console.log(title)}
             <div className="accordion-content">
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed rhoncus lectus. Suspendisse sit amet dolor ante. Maecenas sagittis sed tortor rhoncus aliquam. Vestibulum pretium turpis quis sem facilisis hendrerit. Vivamus gravida quam accumsan elementum laoreet. Maecenas ullamcorper felis risus, eu interdum arcu hendrerit suscipit. Ut iaculis interdum massa.
